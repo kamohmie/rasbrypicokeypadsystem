@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "author": "Anonymous maker",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-pi-pico",
+      "id": "pico",
+      "top": 0,
+      "left": 0,
+      "attrs": { "env": "micropython-20220117-v1.18" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": -49.66,
+      "left": -93.36,
+      "attrs": { "color": "green" }
+    },
+    {
+      "type": "wokwi-membrane-keypad",
+      "id": "keypad1",
+      "top": -358.25,
+      "left": -293.19,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led2",
+      "top": -51.16,
+      "left": -60.49,
+      "attrs": { "color": "red" }
+    }
+  ],
+  "connections": [
+    [ "led1:A", "pico:GP0", "green", [ "v0" ] ],
+    [ "led1:C", "pico:GND.1", "green", [ "v0" ] ],
+    [ "keypad1:C4", "pico:GP2", "green", [ "v0" ] ],
+    [ "keypad1:C3", "pico:GP3", "green", [ "v0" ] ],
+    [ "keypad1:C2", "pico:GP4", "green", [ "v0" ] ],
+    [ "keypad1:C1", "pico:GP5", "green", [ "v0" ] ],
+    [ "keypad1:R4", "pico:GP6", "green", [ "v0" ] ],
+    [ "keypad1:R3", "pico:GP7", "green", [ "v0" ] ],
+    [ "keypad1:R2", "pico:GP8", "green", [ "v0" ] ],
+    [ "keypad1:R1", "pico:GP9", "green", [ "v0" ] ],
+    [ "led2:C", "pico:GND.1", "green", [ "v0" ] ],
+    [ "led2:A", "pico:GP1", "green", [ "v0" ] ]
+  ]
+}
